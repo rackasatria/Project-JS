@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<input id="id2" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+	//deklarasi variable const dengan id yang ada di textbox/input form
+  const input1 = document.getElementById("id1");
+  const input2 = document.getElementById("id2");
+  //tampilin output dari textbox misal "input1" ditambah .value dibelakangnya jadi "input1.value"
+  console.log("input 1 :" + input1.value + " input 2 :" + input2.value );
+ 
+} 
+</script>
+
+</body>
+</html>
